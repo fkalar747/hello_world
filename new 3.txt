@@ -1,0 +1,18 @@
+
+
+
+eclipse 
+
+	debugging 
+		
+		step over 
+		
+		stop 
+		
+		java perspective
+		
+		
+	
+	run 버튼 옆에 작은 드롭다운 
+		-> run configurations 
+			-> Arguments

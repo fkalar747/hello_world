@@ -1,0 +1,67 @@
+
+classpath를 . 으로 잡은 건 그냥 현 디렉토리의 것만 씀 
+	썬에서 제공한 rt.jar 랑 
+	
+promotion은 자동으로 일어나지만 반대의 방향으로는 casting 해야한다. 
+	char byte short -> int 
+	int -> float 
+	
+	
+eclips 
+	ctrl leftclick : go to def
+	ctrl q : 뒤로가기
+	ctrl shift O : 클래스명에 커서 놓고 누르면
+	
+	eclips.ini 파일
+		-startup
+		plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar
+		--launcher.library
+		plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.551.v20171108-1834
+		-product
+		org.eclipse.epp.package.jee.product
+		-showsplash
+		org.eclipse.epp.package.common
+		--launcher.defaultAction
+		openFile
+		--launcher.defaultAction
+		openFile
+		--launcher.appendVmargs
+		-vmargs
+		-Dosgi.requiredJavaVersion=1.8
+		-Dosgi.instance.area.default=@user.home/eclipse-workspace
+		-XX:+UseG1GC
+		-XX:+UseStringDeduplication
+		--add-modules=ALL-SYSTEM
+		-Dosgi.requiredJavaVersion=1.8
+		-Xms256m  최소 메모리 이만큼필요 
+		-Xmx1024m 힙을 이만큼까지 늘리겠다.
+		// 이 값들을 수동적으로 줄일 필요가 있을 수도 있다. 
+		--add-modules=ALL-SYSTEM
+
+자바 메모리 
+	
+	스택 
+		로컬변수 
+	힙 
+		new 로 할당하는 자원들 
+		gc 힙을 관리한다. 
+		
+	코드표 
+		상수처리 문자열 
+	
+	스태틱 
+		main함수 
+		java.lang의 스태틱자원들 
+		
+		import 된 애들 중 스태틱한 자원들 
+	gc 
+		우선순위 최 하위에 있다가 힙에 지정된 여유공간 임계치를 넘어서면 최상위로 올라감
+		
+		
+	Scanner.close 를 해야하는 이유는 키보드 혹은 파일 자원을 계속 사용하기 때문이다. 결국 gc가 동작하면 자원을 풀긴하지만 언제 될지는 모른다. 	
+	
+자바 
+	
+	&&는 앞에꺼 false 나오면 뒤에꺼 해보지도 않음 
+	
+	
