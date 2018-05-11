@@ -1,0 +1,36 @@
+
+
+eclipse 
+	
+	export as archive 
+	
+	import archive with import existing project 
+	
+	switching workspace (file menu)
+	
+	
+java 
+	
+	
+	adapter 클래스 
+		shape라는 abstract 클래스에  circle area rectangle area 를 둘다 추상메소드로 놓으면
+		
+		shape 를 상속받는 rectangle 과 circle은 두 함수를 모두 각각 구현해야한느데 불편하다 
+		
+		shape adapter 클래스를 중간에 만들어 빈함수로 두 추상메소드를 구현하여 이후 하위 클래스들이 모든 추상 메소드를 다시 구현할 필요성을 없앤다. 
+		
+	abstractize or implement 
+		
+		특정 abstract class 나 interface 를 채용한 class  는 그 추상 메소드들을 구현하거나 자기 자신도 abstract 한 클래스가 될 것인지 중에 선택할 수 있다. 
+		
+	interface에 default 메소드를 만들어 오버라이딩 필요성을 선택적으로 할 수 있다. 	
+		
+	
+	A.class 
+		
+		A$B.class $ 가 들어가면 이너클래스
+		
+		A$1.class 숫자가 들어가면 이너 익명클래스 
+			이벤트핸들링할 때에 많이 필요하다. 
+			
+		

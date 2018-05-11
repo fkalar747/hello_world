@@ -1,0 +1,44 @@
+
+
+jar 
+
+	java의 파일 압축 배포
+
+		java 의 모든 library는 jar로 압축한다 
+
+		html xml 등의 리소스는 war로 압축한다. 
+			
+			- 와스 서버에 디플로이 된다. 
+
+		ejb 컴포너트 ear로 압축된다.  
+
+	그러나 명령은 다 jar이다. 
+	
+	다운받은 jar를 사용하기 위해선 classpath 설정을 해줘야한다. 
+	
+	library간에는 의존관계가 있어서 하나의 jar를 위해 다른 jar도 받고 해야한다. 
+	
+	classpath를 지정하면
+	
+	
+java object 클래스 	
+	
+	PUBLIC 함수 : 자바의 모든 객체들이 쓸 수 있는 함수 
+			
+		toString() : 
+		equals() : 
+			콜렉션에 집어넣을때 같은지 판단할때 사용
+		
+		clone() 
+		
+		finalize() :
+			c++ 의 소멸자와 유사 
+			그러나 java에선 gc가 언제돌지 모르기 때문에 쓰지 않는다. 
+		
+콜렉션 기초 
+
+	map : 
+		key값과 value 값이 있는 데이터 
+		key 값은 절대 중복되면 안된다. 
+		
+		
